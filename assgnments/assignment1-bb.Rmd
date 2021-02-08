@@ -1,0 +1,19 @@
+---
+title: "Assignment 1a"
+author: "Bri Baker"
+date: "2/8/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Why I am taking 262
+
+I am taking 262 because I am interested in honing my computational skills and workflow. I am new enough to data science that it is helpful to have directed excercises that help me to determine what to practice.
+
+
+## My data science background
+
+In terms of my background, I have been programming in R for a few years now, mostly as a biologist/ecologist. In undergrad, I took a course in Computational Biology that outlined basic data science principles and practices and gave a survey of computational analyses useful in biology and ecology. I also have a background in GIS, primaily using Arc, but also in R. Here at Bren I took 206 and am currently enrolled in 244. I would consider myself very much a learner. 
