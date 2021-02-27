@@ -1,0 +1,24 @@
+---
+title: "Assignment 3"
+author: "Bri Baker"
+date: "2/26/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+source("r/fall_severity.R")
+```
+
+```{r}
+fall_severity(fall_length = 4, rope_length = 60)
+```
+
+
+```{r}
+
+```
+
