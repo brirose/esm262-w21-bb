@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
-source("r/fall_severity.R")
+source("R/fall_severity.R")
 ```
 
 ```{r}
@@ -19,6 +19,11 @@ fall_severity(fall_length = 4, rope_length = 60)
 
 
 ```{r}
+source("R/gear_placement.R")
+```
 
+
+```{r}
+gear_placement(climb_height = 10, fall_distance = 3)
 ```
 
