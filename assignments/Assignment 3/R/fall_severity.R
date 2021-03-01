@@ -7,6 +7,8 @@ library(tidyverse)
 
 
 fall_severity <- function (fall_length, rope_length){
+
+  #  Error checking to ensure variables greater than 0
   
   fall_length = ifelse(
     fall_length <= 0,
@@ -21,8 +23,10 @@ fall_severity <- function (fall_length, rope_length){
     rope_length
   )
 
+  # calculate fall factor based on ratio of fall length to rope length
   fall_factor = fall_length/rope_length
   
+  # classify severity of fall
   fall_severity = case_when(
     fall_factor <= 0.5 ~ "minor",
     fall_factor <= 1 ~ "moderate",
@@ -31,6 +35,8 @@ fall_severity <- function (fall_length, rope_length){
     TRUE ~ "oops something went wrong"
   )
   
+  
+  # return fall severity
   return(fall_severity)
   
 }

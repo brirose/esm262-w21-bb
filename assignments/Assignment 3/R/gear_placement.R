@@ -5,6 +5,8 @@
 
 gear_placement <- function(climb_height, fall_distance){
   
+  # error checking to ensure valid variable values
+  
   climb_height = ifelse(
     climb_height <= 0,
     return("Climb height must be greater than zero"),
@@ -17,16 +19,18 @@ gear_placement <- function(climb_height, fall_distance){
     return("fall distance must be greater than zero and less than climb height")
   )
   
+  # set initial values
   clip_count <- 1
   fall <- climb_height
   
+  # calculate count of clips needed
   while(fall > fall_distance && clip_count <= 15){
     
     fall = climb_height/clip_count
     
     if(fall > fall_distance){
       clip_count = clip_count + 1
-    }else return(clip_count)
+    }else return(clip_count) # return clip count
   }
 }
 
