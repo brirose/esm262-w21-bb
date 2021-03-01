@@ -1,0 +1,33 @@
+---
+title: "Assignememt 4"
+author: "Bri Baker, Jaleise Hall, Evan Herberlein"
+date: "3/1/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(here)
+```
+
+## Instructions 
+
+Write a function that takes a vector of fish names and always returns three items
+
+* the most common fish, 
+
+* the rarest fish
+
+* the total number of fish
+
+AND
+
+ include an option (defaulted to FALSE) that if TRUE also returns a histogram of the number of each fish type, with a title giving the total number of fish caught.  Remember that you can save a graph as a variable.
+ 
+```{r}
+fish <- read_tsv(here("assignments", "Assignment 4", "data", "fish.txt"))
+  
+```
+ 
+ 
