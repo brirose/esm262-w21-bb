@@ -20,13 +20,14 @@ fish_counts <- function(fish, plot = FALSE){
   # find total number of fish
   total_fish <- sum(fish_summary)
   
+  print(c(common_fish, rare_fish, total_fish))
+  
   # make plot
   if(plot == TRUE){
     fish_plot <-  ggplot(data.frame(fish_summary), 
                          aes(fish_summary, fill=fish_summary))+
       geom_histogram(stat="count")+
       labs(title="Total fish caught")
-    return(common_fish, rare_fish, total_fish, fish_plot) 
-  }else(return(common_fish, rare_fish, total_fish))
+    return(fish_plot)}
 
 }

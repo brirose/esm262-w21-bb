@@ -11,6 +11,11 @@ library(tidyverse)
 library(here)
 ```
 
+```{r}
+source("R/fish_counts.R")
+```
+
+
 ## Instructions 
 
 Write a function that takes a vector of fish names and always returns three items
@@ -23,11 +28,19 @@ Write a function that takes a vector of fish names and always returns three item
 
 AND
 
- include an option (defaulted to FALSE) that if TRUE also returns a histogram of the number of each fish type, with a title giving the total number of fish caught.  Remember that you can save a graph as a variable.
+ include an option (defaulted to FALSE) that if TRUE also returns a histogram of the number of each fish type, with a .  Remember that you can save a graph as a variable.
+ 
+ need to add title giving the total number of fish caught (from `sprintf`)
  
 ```{r}
 fish <- read_tsv(here("assignments", "Assignment 4", "data", "fish.txt"))
+
+all_fish <- as.vector(fish[["x"]])
   
+```
+ 
+```{r}
+fish_counts(all_fish, plot = TRUE)
 ```
  
  
